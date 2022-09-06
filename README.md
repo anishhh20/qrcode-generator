@@ -3,13 +3,14 @@
 
 <img align="right" height="200" width="200" alt="" src="images/qr.gif" />
 <br>
+<br>
 Used simple and basic HTML, CSS, and JavaScript, I created a Responsive QR Code Generator Site.
 <br><br>
 
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
 [![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
 [![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
-[<img alt="jQuery" src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white"/>]<br><br>
+[<img alt="jQuery" src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white"/>]<br><br><br><br><br>
 
 ## 📌Sneak Peek 😁👇🏼
 
