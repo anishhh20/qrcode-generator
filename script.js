@@ -5,7 +5,8 @@ qrImg = wrapper.querySelector(".qr-code img");
 let preValue;
 document.getElementById("showig").style.visibility = "hidden";
 document.getElementById("abt").style.visibility = "hidden";
-
+let demo = document.getElementById("demo");
+demo.style.visibility = "hidden";
 
 
 // When I press Enter from Form Input, it will Trigger(click) the "Generate QR Code" button
@@ -32,6 +33,7 @@ generateBtn.addEventListener("click", () =>{
         document.getElementById("theImage").style.visibility = "hidden";
         document.getElementById("btn").style.visibility = "hidden";
         document.getElementById("btn1").style.visibility = "hidden";
+        document.getElementById("demo").style.visibility = "hidden";
         
     });
     
@@ -56,10 +58,15 @@ function inputtext(){
     var value1 = document.getElementById('text1').value;
     if (value1.length == 0)
     {
-        if (!alert('Please, Paste URL or Enter Text to Continue !🙂'))
-        {
-            return false;
-        }
+        // if (!alert('Please, Paste URL or Enter Text to Continue !🙂'))
+        // {
+        //     return false;
+        // }
+
+        demo.style.visibility = "visible";      
+        setTimeout(() => {
+          demo.style.visibility = 'hidden';
+        }, 1300); 
     }
 }
 

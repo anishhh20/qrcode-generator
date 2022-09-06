@@ -118,9 +118,10 @@ p {
 /* Portfolio QR Code Image after,Click's on WhoAmI.gif Image */
 .fullimg{
     background-color: #272727;
-    width: 200vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: fixed;
+    z-index: 1000;
 }
 .fullimg span{
     top: 5%;
@@ -218,6 +219,7 @@ a:hover {
     position: fixed;
     padding: 150px;
     width: 100%;
+    z-index: 1000;
 }
 .txt p{
     color: white;
@@ -247,5 +249,53 @@ footer {
     color: white;
     padding: 20px;
     bottom: 0;
-
 }
+
+
+#demo{
+    top: 25%;
+    position: fixed;
+    color: white;
+}
+
+
+/* Media Querie Properties */
+@media (max-width:830px)and (min-width:0px){
+    .btn img{
+        width: 50px;
+    }
+    .btn1 img {
+        width: 50px;
+    }
+    .btn1{
+        top: 120px;
+    }
+    .fullimg{
+        width: 100%;
+        height: 100%;
+    }
+    .fullimg img {
+        position: fixed;
+        top: 50;
+        left: 60px;
+    }
+    .about{
+        width: 100%;
+        height: 100%;
+        padding: 60px;
+    }
+    .txt p {
+        font-size: 19px;
+    }
+
+    .txt h1 {
+        font-size: 19px;
+    }
+
+    .txt span {
+        font-size: 25px;
+    }
+    .hello img {
+        width: 170px;
+    }
+}   
