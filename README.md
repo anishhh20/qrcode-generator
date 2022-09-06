@@ -1,11 +1,11 @@
 # QR Code Generator !!
 [🔗Visit!!](https://anishhh20.github.io/qrcode-generator/)
 
-
+<img align="right" height="200" width="200" alt="" src="images/qr.gif" />
+<br>
 Used simple and basic HTML, CSS, and JavaScript, I created a Responsive QR Code Generator Site.
 <br><br>
-<img align="right" height="250" width="375" alt="" src="images/qr.gif" />
-<br>
+
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
 [![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
 [![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
