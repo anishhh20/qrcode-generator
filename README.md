@@ -13,11 +13,9 @@ Used simple and basic HTML, CSS, and JavaScript, I created a Responsive QR Code 
 
 ## 📌Sneak Peek 😁👇🏼
 
-<img src="images/screenshots/s1.png" >
-<img src="images/screenshots/s2.png" >
-<img src="images/screenshots/s3.png" >
-<img src="images/screenshots/s3.5.png" >
-<img src="images/screenshots/s4.png" >
+<img src="images/screenshots/ss1.png" >
+<img src="images/screenshots/ss2.png" >
+<img src="images/screenshots/ss3.png" >
 
 <h2>📬 Contact</h2>
 
