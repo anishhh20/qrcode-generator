@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #272727;
+}
+.wrapper{
+    height: 259px;
+    background-color: #fff;
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px 25px;
+    transition: height 0.2 ease;
+}
+.wrapper.active {
+    height: 570px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+p {
+    font-size: 15px;
+    color: #474747;
+    margin-top: 10px;
+}
+.wrapper .form{
+    margin: 20px 0 25px;
+}
+.form :where(input, button){
+    width: 100%;
+    height: 55px;
+    border : none;
+    outline: none;
+    border-radius: 5px;
+}
+.form input{
+    border: 1px solid #999;
+    padding: 0 17px;
+}
+
+.form button{
+    background-color: #272727;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.wrapper .qr-code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 33px 0;
+    border-radius: 5px;
+    opacity: 0; /*  ****************** */
+    pointer-events: none;  /*  ****************** */
+}
+.wrapper.active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
+
+::selection {
+    color: white;
+    background: #373737;
+}
+
+
+/* loading Screen Properties  */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.loading.fade-out {
+    top: -120%;
+    transition: all 1s ease;
+}
+
+
+/* Hello.gif Image Properties */
+.hello{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 10;
+    left: -10;
+    z-index: -1;
+}
+.hello img{
+    width: 15%;
+    z-index: -1;
+}
+
+
+/* Portfolio QR Code Image after,Click's on WhoAmI.gif Image */
+.fullimg{
+    background-color: #272727;
+    width: 200vh;
+    height: 100vh;
+    position: fixed;
+}
+.fullimg span{
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    position: fixed;
+    color : white;
+    cursor: pointer;
+}
+.fullimg img{
+    position: fixed;
+    top: 25%;
+    left: 37%;
+    width: 50vh;
+    height: 50vh;
+}
+.fullimg img:hover{
+    transform: scale(1.1);
+    transition: .5s linear;
+}
+.fullimg h1{
+    color: #fff;
+    text-align: center;
+    top: 12%;
+    position: relative;
+}
+.fullimg span:hover,
+#x:hover {
+    transform: scale(1.4);
+}
+
+
+/* WhoAmI.gif Properties */
+.btn{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 10px;
+    border: none;
+    background-color: #272727;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 10px;
+}
+.btn img{
+    width: 80px;
+}
+
+
+/* Funny-Face.gif Properties */
+.btn1 {
+    position: fixed;
+    top: 170px;
+    right: 30px;
+    padding: 10px;
+    border: none;
+    background-color: #272727;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 10px;
+}
+.btn1 img {
+    width: 80px;
+}
+.btn1:hover , .btn:hover{
+    transform: scale(1.1);
+    transition: .2s linear;
+}
+
+
+/* a tag Underline Properties */
+a{
+    text-decoration: none;
+    color: cyan;
+}
+a:hover {
+    transition: all 0.5s ease;
+    border-bottom: 1px solid;
+    padding-bottom: .5px;
+}
+
+
+/* About Section Properties */
+.about{
+    top: 0;
+    color: white;
+    background-color: #272727;
+    height: 100vh;
+    position: fixed;
+    padding: 150px;
+    width: 100%;
+}
+.txt p{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.txt h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.txt span{
+    font-size: 40px;
+}
+#x{
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    position: fixed;
+    cursor: pointer;
+}
+
+
+/* Footer Section Properties */
+footer {
+    position: fixed;
+    color: white;
+    padding: 20px;
+    bottom: 0;
+
+}

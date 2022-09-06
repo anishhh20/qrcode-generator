@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR Code Generator</title>
+
+        <!-- Link Style.css File -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Image on Title Bar -->
+        <link rel="icon" href="images/portfolio.png" type="image/gif">
+
+    </head>
+
+    <body>
+
+        <!-- Loading Screen  -->
+        <div class="loading">
+            <img draggable="false" src="images/load.gif" alt="Loading...">
+        </div>
+
+
+        <!-- Hello.gif Image -->
+        <div class="hello" id="theImage">
+            <img src="images/hello.gif">
+        </div>
+
+
+        <!-- WhoAmI.gif Image -->
+        <button onclick="showImage()" class="btn" id="btn"> <img src="images/who.gif" ></button>
+        <!-- Funny-Face.gif Image -->
+        <button onclick="showImage1()" class="btn1" id="btn1"> <img src="images/funny-face.gif"></button>
+
+
+        <!-- Portfolio QR Code Image after, Click's on WhoAmI.gif Image -->
+        <div class="fullimg" id="showig">
+            <h1>SCAN ME </h1>
+            <img src="images/portfolio.png" alt="" >
+            <span onclick="hide()"> X </span>
+        </div>
+
+
+        <!-- QR Code Generator Section -->
+        <div class="wrapper" >
+
+            <!-- Header Section  -->
+            <header>
+                <h1>QR Code Generator</h1>  
+                <p>Paste URL or Enter Text to generate a QR Code !</p>
+            </header>
+
+            <div class="form">
+                <input type="text" id="text1" name="qrCode" placeholder="Enter text or URL" required>
+                <button onClick="inputtext()" id="myBtn">Generate QR Code</button>
+            </div>
+
+            <div class="qr-code">
+                <!-- <a href="qr-code.jpg" download="QR-Code" title="Click to Download QR Code"> -->
+                    <img src="" alt="" onclick="ck()">
+                <!-- </a> -->
+            </div>
+        </div>
+
+
+        <!-- About this Project Section -->
+        <div class="about" id="abt">
+
+            <!-- Close Button -->
+            <span onclick="hide()"  id="x"> X </span>
+
+            <!-- Text in the About Section -->
+            <div class="txt">
+
+                <h1> About this Project  <span>  < QR Code Generator/></span></h1>
+
+                <p>
+                ➼ A QR Code (Quick Response Code) is a type of matrix barcode or two-dimensional barcode.
+                    <p>
+                        ➼ QR codes use four standardised encoding modes ( Numeric, Alpha-Numeric, Byte/Binary, and Kanji) to store data
+                        efficiently.
+                    </p>
+                    <p>
+                        ➼ The Quick Response system became popular outside the automotive industry due to its fast readability and greater storage
+                        capacity compared to standard UPC barcodes.
+                    </p>
+                    <p>
+                        ➼ A QR Code consists of black squares arranged in a square grid on a white background, which can be read by an imaging
+                        device such as a camera and processed using Reed-Solomon error correction.
+                    </p>
+                    <p>
+                        ➼ To know, more about the QR Code, Visit <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank">👉 QR Code</a>
+                    </p>
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- Footer Section -->
+        <footer>
+            Designed with ❤️ by <a href="https://github.com/anishhh20" target="_blank"> Anish Teli.</a>
+        </footer>
+
+
+        <!-- Linked a JS file -->
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>
