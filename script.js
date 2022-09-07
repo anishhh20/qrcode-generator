@@ -5,9 +5,11 @@ qrImg = wrapper.querySelector(".qr-code img");
 let preValue;
 document.getElementById("showig").style.visibility = "hidden";
 document.getElementById("abt").style.visibility = "hidden";
+
 let demo = document.getElementById("demo");
 demo.style.visibility = "hidden";
-
+let demo1 = document.getElementById("demo1");
+demo1.style.visibility = "hidden";
 
 // When I press Enter from Form Input, it will Trigger(click) the "Generate QR Code" button
 var input = document.getElementById("text1");
@@ -24,17 +26,35 @@ generateBtn.addEventListener("click", () =>{
     if(!qrValue || preValue === qrValue) return;
     preValue = qrValue;
     generateBtn.innerText = "Generating QR Code⌛.....";
+    generateBtn.style.cursor="no-drop";
+    generateBtn.style.opacity= "0.7";
+
 
     qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
 
     qrImg.addEventListener("load", () =>{
         wrapper.classList.add("active");
         generateBtn.innerText = "QR Code Generated🥳";
+        generateBtn.style.cursor="pointer ";
+        generateBtn.style.opacity= "1";
         document.getElementById("theImage").style.visibility = "hidden";
         document.getElementById("btn").style.visibility = "hidden";
         document.getElementById("btn1").style.visibility = "hidden";
         document.getElementById("demo").style.visibility = "hidden";
         
+        //On Mouse Over of tht ele
+        generateBtn.onmouseover = function() {
+          setTimeout(() => {
+            demo1.style.visibility = 'visible';
+          }, 150);
+        }
+
+        //On Mouse Out of tht ele
+        generateBtn.onmouseout = function() {
+          setTimeout(() => {
+            demo1.style.visibility = 'hidden';
+          }, 150);
+        }
     });
     
 });
@@ -46,6 +66,13 @@ qrInput.addEventListener("keyup", () =>{
         wrapper.classList.remove("active");
         preValue = "";
         generateBtn.innerText = "Generate QR Code";
+
+        generateBtn.onmouseover = function() {
+          setTimeout(() => {
+            demo1.style.visibility = 'hidden';
+          }, 150);
+        }
+
         document.getElementById("theImage").style.visibility = "visible";
         document.getElementById("btn").style.visibility = "visible";
         document.getElementById("btn1").style.visibility = "visible";
@@ -62,7 +89,7 @@ function inputtext(){
         // {
         //     return false;
         // }
-
+        
         demo.style.visibility = "visible";      
         setTimeout(() => {
           demo.style.visibility = 'hidden';
