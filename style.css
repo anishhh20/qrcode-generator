@@ -341,3 +341,15 @@ button{
     color: white;
     cursor: pointer;
 }
+
+.dbtn{
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    background-color: #272727;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
