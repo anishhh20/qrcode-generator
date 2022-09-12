@@ -6,6 +6,9 @@ let preValue;
 document.getElementById("showig").style.visibility = "hidden";
 document.getElementById("abt").style.visibility = "hidden";
 
+const fullPage = document.querySelector('.fullscreen');
+fullPage.style.visibility = "hidden";
+
 let demo = document.getElementById("demo");
 demo.style.visibility = "hidden";
 let demo1 = document.getElementById("demo1");
@@ -22,13 +25,13 @@ input.addEventListener("keypress", function(event) {
 
 // QR Code Generate Button Properties
 generateBtn.addEventListener("click", () =>{
+
     let qrValue = qrInput.value.trim();
     if(!qrValue || preValue === qrValue) return;
     preValue = qrValue;
     generateBtn.innerText = "Generating QR Code⌛.....";
     generateBtn.style.cursor="no-drop";
     generateBtn.style.opacity= "0.7";
-
 
     qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
 
@@ -56,7 +59,6 @@ generateBtn.addEventListener("click", () =>{
           }, 150);
         }
     });
-    
 });
 
 
@@ -80,20 +82,15 @@ qrInput.addEventListener("keyup", () =>{
 });
 
 
-// Check's tht Form Input has value or not and Send a Alert box with msg
+// Check's tht Form Input has value or not and display msg
 function inputtext(){
     var value1 = document.getElementById('text1').value;
     if (value1.length == 0)
-    {
-        // if (!alert('Please, Paste URL or Enter Text to Continue !🙂'))
-        // {
-        //     return false;
-        // }
-        
-        demo.style.visibility = "visible";      
-        setTimeout(() => {
-          demo.style.visibility = 'hidden';
-        }, 1300); 
+    {        
+      demo.style.visibility = "visible";      
+      setTimeout(() => {
+        demo.style.visibility = 'hidden';
+      }, 1300); 
     }
 }
 
@@ -119,10 +116,11 @@ function showImage1(){
 function hide(){
     document.getElementById("showig").style.visibility = "hidden";
     document.getElementById("abt").style.visibility = "hidden";
+    fullPage.style.visibility = "hidden";
 }
 
 
-// Disable Developer Mode (disable right click, 123 keycode, ctrl+shift+i, ctrl+shift+c, ctrl+shift+j, ctrl+u)
+// // Disable Developer Mode (disable right click, 123 keycode, ctrl+shift+i, ctrl+shift+c, ctrl+shift+j, ctrl+u)
 document.onkeydown = function(e) {
   if(event.keyCode == 123) {       
     return false;
@@ -136,10 +134,7 @@ document.onkeydown = function(e) {
   if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {       
     return false;
   }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-    // if(confirm("Sorry, Inspect is Hided😶!!.\nVisit my GitHub profile for source code😁\nYes, There r lots of ways to access it.Find it!🤔\nHint: Lil easy n in front of uhh")){ // shown confirm message if user click on OK
-    //     window.open("https://github.com/anishteli238/anish-portfolio", '_blank');    //////// open github link in new tab
-    // }       
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {      
     return false;
   }
 }
@@ -151,6 +146,8 @@ document.addEventListener('contextmenu', function(e){
 });
 
 
-// function ck(){
-//     alert('hii');
-// }
+// View QR Code Generated Image in large screen
+function ck() {
+  fullPage.style.visibility = "visible";
+  fullPage.style.backgroundImage = 'url(' + qrImg.src + ')';
+}

@@ -17,9 +17,14 @@
 
     <body>
 
+        <!-- Display image in FullScreen -->
+        <div class="fullscreen" >
+            <span onclick="hide()"> X </span>
+        </div>
+
         <!-- Loading Screen  -->
         <div class="loading">
-            <img draggable="false" src="images/load.gif" alt="Loading...">
+            <img draggable="false" src="images/load.gif" alt="Loading..." id="loading">
         </div>
 
 
@@ -62,9 +67,9 @@
             </div>
 
             <div class="qr-code">
-                <!-- <a href="qr-code.jpg" download="QR-Code" title="Click to Download QR Code"> -->
-                    <img src="" alt="" onclick="ck()">
-                <!-- </a> -->
+                
+                <img src="" title="View QR Code in Full Screen👀" onclick="ck()" class="imgfull">
+                
             </div>
         </div>
 

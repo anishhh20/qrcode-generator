@@ -64,6 +64,7 @@ p {
     border: 1px solid #ccc;
     padding: 33px 0;
     border-radius: 5px;
+    cursor: pointer;
     opacity: 0; /*  ****************** */
     pointer-events: none;  /*  ****************** */
 }
@@ -93,6 +94,7 @@ p {
     width: 100%;
     overflow: hidden;
     overflow-x: hidden;
+    cursor: progress;
 }
 
 .loading.fade-out {
@@ -311,6 +313,31 @@ footer {
         width: 170px;
     }
 }   
+
 button{
     z-index: 1;
+}
+
+
+
+/* FullScreen Image Properties */
+.fullscreen {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: 30%;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.fullscreen span{
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    position: fixed;
+    color: white;
+    cursor: pointer;
 }
