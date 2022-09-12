@@ -123,29 +123,29 @@ function hide(){
 
 
 // // Disable Developer Mode (disable right click, 123 keycode, ctrl+shift+i, ctrl+shift+c, ctrl+shift+j, ctrl+u)
-// document.onkeydown = function(e) {
-//   if(event.keyCode == 123) {       
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {       
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {       
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {       
-//     return false;
-//   }
-//   if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {      
-//     return false;
-//   }
-// }
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {       
+    return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {       
+    return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {       
+    return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {       
+    return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {      
+    return false;
+  }
+}
 
 
 // //disable right click
-// document.addEventListener('contextmenu', function(e){
-//     e.preventDefault();
-// });
+document.addEventListener('contextmenu', function(e){
+    e.preventDefault();
+});
 
 
 // View QR Code Generated Image in large screen
