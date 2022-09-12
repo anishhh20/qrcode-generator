@@ -1,5 +1,5 @@
 # QR Code Generator !!
-[🔗Visit!!](https://anishhh20.github.io/qrcode-generator/)
+[🔗 Visit Site!!](https://anishhh20.github.io/qrcode-generator/)
 
 <img align="right" height="200" width="200" alt="" src="images/qr.gif" />
 <br>
