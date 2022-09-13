@@ -255,6 +255,7 @@ footer {
 }
 
 
+/* Display Messages Properties */
 #demo{
     top: 25%;
     position: fixed;
@@ -270,6 +271,11 @@ footer {
     position: fixed;
     align-items: center;
     justify-content: center;
+}
+#demo2 {
+    top: 5%;
+    position: fixed;
+    color: white;
 }
 
 
@@ -342,6 +348,8 @@ button{
     cursor: pointer;
 }
 
+
+/* Download Button Properties */
 .dbtn{
     border-radius: 5px;
     padding: 8px;
