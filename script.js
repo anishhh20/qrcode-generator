@@ -7,6 +7,8 @@ document.getElementById("showig").style.visibility = "hidden";
 document.getElementById("abt").style.visibility = "hidden";
 
 const dbtn = document.querySelector('.dbtn');
+const backH = document.querySelector('.backH');
+backH.style.visibility = "hidden";
 
 const fullPage = document.querySelector('.fullscreen');
 fullPage.style.visibility = "hidden";
@@ -46,6 +48,7 @@ generateBtn.addEventListener("click", () =>{
         document.getElementById("btn").style.visibility = "hidden";
         document.getElementById("btn1").style.visibility = "hidden";
         document.getElementById("demo").style.visibility = "hidden";
+        backH.style.visibility = "visible";
         
         //On Mouse Over of tht ele
         generateBtn.onmouseover = function() {
@@ -80,6 +83,7 @@ qrInput.addEventListener("keyup", () =>{
         document.getElementById("theImage").style.visibility = "visible";
         document.getElementById("btn").style.visibility = "visible";
         document.getElementById("btn1").style.visibility = "visible";
+        backH.style.visibility = "hidden";
     }
 });
 
@@ -182,3 +186,21 @@ function downloadIg(elmnt) {
     }); 
 }
 
+
+function backHome(){
+  document.getElementById("text1").value = "";
+  wrapper.classList.remove("active");
+        preValue = "";
+        generateBtn.innerText = "Generate QR Code";
+
+        generateBtn.onmouseover = function() {
+          setTimeout(() => {
+            demo1.style.visibility = 'hidden';
+          }, 150);
+        }
+
+        document.getElementById("theImage").style.visibility = "visible";
+        document.getElementById("btn").style.visibility = "visible";
+        document.getElementById("btn1").style.visibility = "visible";
+        backH.style.visibility = "hidden";
+}

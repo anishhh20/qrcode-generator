@@ -353,3 +353,22 @@ button{
     cursor: pointer;
     width: 100%;
 }
+
+
+/* Back Home Button */
+.backH{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.backH button{
+    cursor: pointer;
+    background-color: #272727;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+}
+.backH button:hover {
+    transform: scale(1.1);
+}
