@@ -1,6 +1,5 @@
 const wrapper = document.querySelector(".wrapper"),
 qrInput = wrapper.querySelector(".form input"),
-generateBtn = wrapper.querySelector(".form button"),
 qrImg = wrapper.querySelector(".qr-code img");
 let preValue;
 document.getElementById("showig").style.visibility = "hidden";
@@ -43,7 +42,7 @@ generateBtn.addEventListener("click", () =>{
     generateBtn.style.cursor="no-drop";
     generateBtn.style.opacity= "0.7";
 
-    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
+    qrImg = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
 
     qrImg.addEventListener("load", () =>{
         wrapper.classList.add("active");
