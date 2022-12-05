@@ -52,15 +52,17 @@
         </div>
 
 
-        <!-- Display Message  -->
+        <!-- Display Message's  -->
         <p id="demo">⚠️ Please, Paste URL or Enter Text to Continue !🙂</p>
-        <p id="demo1">Wanna, Generate a New QR Code😜..? <br> <span style="padding-top:1px;font-size:12.5px;color: #d2d1d1;"> Edit the Text / URL🔗</span> </p>
+        <p id="demo1">Wanna, Generate a New QR Code😜..? <br> <span style="padding-top:1px;font-size:12.5px;color: #d2d1d1;"> Edit the Text🖋️ / URL🔗</span> </p>
         <p id="demo2">Downloading...⬇️</p>
 
 
         <!-- QR Code Generator Section -->
         <div class="wrapper" >
-            
+            <div class="card__corner">
+                <div class="card__corner-triangle">
+            </div>
             <!-- Header Section  -->
             <header>
                 <h1>QR Code Generator</h1>  
@@ -68,16 +70,18 @@
             </header>
 
             <div class="form">
-                <input type="text" id="text1" name="qrCode" placeholder="Enter text or URL" required>
+                <input type="text" id="text1" name="qrCode" placeholder="Enter Text or URL" required>
                 <button onClick="inputtext()" id="myBtn" class="myBtn">Generate QR Code</button>
             </div>
 
             <div class="qr-code">
                 
-                <img src="" title="View QR Code in Full Screen👀" onclick="ck()" class="imgfull">
+                <img src="" title="View QR Code in Full Screen👀" onclick="FullScreenImg()" class="imgfull">
                 
             </div>
+
             <button class="dbtn" onclick="downloadIg(this)" title="Download QR Code">DOWNLOAD</button>
+
         </div>
 
 

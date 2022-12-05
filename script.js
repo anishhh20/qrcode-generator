@@ -1,9 +1,9 @@
 const wrapper = document.querySelector(".wrapper"),
 qrInput = wrapper.querySelector(".form input"),
-qrImg = wrapper.querySelector(".qr-code img"),
-generateBtn = wrapper.querySelector("button"); //here, missing the querySelector the select .form button in 'generateBtn'
-
+generateBtn = wrapper.querySelector(".form button"),///////////////////////////////////////////////////////////////////
+qrImg = wrapper.querySelector(".qr-code img");
 let preValue;
+
 document.getElementById("showig").style.visibility = "hidden";
 document.getElementById("abt").style.visibility = "hidden";
 
@@ -44,7 +44,7 @@ generateBtn.addEventListener("click", () =>{
     generateBtn.style.cursor="no-drop";
     generateBtn.style.opacity= "0.7";
 
-    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${}`; //updated qrImg with 'qrImg.src'
+    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;//////////////////////////////////////////.src
 
     qrImg.addEventListener("load", () =>{
         wrapper.classList.add("active");
@@ -82,7 +82,7 @@ qrInput.addEventListener("keyup", () =>{
     if(!qrInput.value.trim()) {
 
       sameprop();
-      
+
     }
 });
 
@@ -146,14 +146,14 @@ document.onkeydown = function(e) {
 }
 
 
-//disable right click
+// //disable right click
 document.addEventListener('contextmenu', function(e){
     e.preventDefault();
 });
 
 
 // View QR Code Generated Image in large screen
-function ck() {
+function FullScreenImg() {
   fullPage.style.visibility = "visible";
   fullPage.style.backgroundImage = 'url(' + qrImg.src + ')';
 }

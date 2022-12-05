@@ -334,7 +334,7 @@ button{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-size: 30%;
+    background-size: 25%;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     background-color: black;
@@ -379,4 +379,23 @@ button{
 }
 .backH button:hover {
     transform: scale(1.1);
+}
+
+
+.card .card__corner {
+position: absolute;
+top: 0;
+right: 0;
+width: 2em;
+height: 2em;
+background-color: #e6e7e8;
+}
+
+.card .card__corner .card__corner-triangle {
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 2em 2em 0;
+border-color: transparent #f1f2f2 transparent transparent;
 }
