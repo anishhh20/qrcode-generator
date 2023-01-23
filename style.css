@@ -223,6 +223,7 @@ a:hover {
     padding: 150px;
     width: 100%;
     z-index: 1000;
+    left: 0;
 }
 .txt p{
     color: white;
